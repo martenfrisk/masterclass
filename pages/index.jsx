@@ -4,7 +4,7 @@ import Lemons from '../components/lemons'
 
 const infobox = (title, para1, para2, para3) => {
 	return (
-		<div className="w-auto px-4 pb-10 mx-4 mt-10 text-lg text-white bg-gray-900 shadow-xl lora md:mx-16 md:text-2xl md:px-20">
+		<div className="w-auto px-4 pb-10 mx-4 mt-10 text-lg text-white bg-gray-900 shadow-2xl lora md:mx-16 md:text-2xl md:px-20">
 			<div className="block px-4 py-2 mb-8 font-sans text-2xl font-light text-center bg-gray-700 md:text-2xl md:inline-block md:-ml-10">
 				{title}
 			</div>
@@ -43,10 +43,10 @@ export default function Home() {
 	return (
 		<React.Fragment>
 			<Head>
-				<meta charset="utf-8" />
-
+				<meta charSet="utf-8" />
 				<meta name="description" content="Fan website dedicated to Hollywood Masterclass" />
 				<title>Hollywood Masterclass with Shonk Lemons</title>
+				<script data-goatcounter="https://masterclass.goatcounter.com/count" async src="//gc.zgo.at/count.js" />
 			</Head>
 			<div className="w-full h-auto bg-gray-800">
 				<div className="w-full text-xl font-light text-center text-gray-100 underline serif">
@@ -136,7 +136,7 @@ export default function Home() {
 								</div>
 								<p className="w-5/6 mb-2">Free of charge.</p>
 							</div>
-							<button className="self-end w-1/2 p-2 mb-4 text-white bg-blue-400 rounded-md hover:bg-blue-700">
+							<button className="self-end w-2/3 p-2 mb-4 text-white bg-blue-400 rounded-md hover:bg-blue-700">
 								<a
 									href="https://www.earwolf.com/episode/hollywood-masterclass-ep1-the-role-of-the-artist/"
 									target="_blank"
@@ -185,7 +185,7 @@ export default function Home() {
 								<div className="font-sans text-lg font-extrabold text-green-400">&#x2713;</div>
 							</div>
 							<p className="w-5/6 pr-2 mb-2">Use the beloved Stitcher App.</p>
-							<button className="self-end w-1/2 px-4 py-2 mb-4 text-white bg-blue-400 rounded-md hover:bg-blue-700">
+							<button className="self-end w-3/4 px-4 py-2 mb-4 text-white bg-blue-400 rounded-md hover:bg-blue-700">
 								<a
 									href="https://www.stitcherpremium.com/masterclass"
 									target="_blank"
@@ -199,8 +199,20 @@ export default function Home() {
 				</div>
 			</div>
 			<div className="w-screen h-auto px-10 py-4 text-center text-gray-600 bg-gray-800">
-				This website is not affiliated with Sean Clements, Ben Rodgers, Midroll Earwolf or Stitcher. Site
-				created by Marten (<a href="https://github.com/martenfrisk">reach me on GitHub</a>)
+				<p>
+					This website is not affiliated with Sean Clements, Ben Rodgers, Midroll, Earwolf or Stitcher. No
+					copyright infringement intented.
+				</p>
+				<p>
+					Site created by Marten (<a
+						className="border-b-2 border-gray-600 border-dotted"
+						target="_blank"
+						rel="noopener noreferrer"
+						href="https://github.com/martenfrisk"
+					>
+						reach me on GitHub
+					</a>)
+				</p>
 			</div>
 		</React.Fragment>
 	)
