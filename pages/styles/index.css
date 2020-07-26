@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Lato:wght@300;400&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap');
+
+body {
+  background-color: #1A202C;
+}
+
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.yourgrace {
+font-family: 'Covered By Your Grace', cursive;
+}
+
+img {
+  filter: drop-shadow(-5px 4px 4px rgba(0, 0, 0, 0.50));
+}
+
+.lora {
+  font-family: 'Lora', serif;
+}
+
+.mc {
+  background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(254, 255, 206));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
