@@ -24,7 +24,7 @@ const infobox = (title, para1, para2, para3) => {
 }
 
 const sidePricing = (title) => {
-	return <div className="py-2 mb-4 text-3xl bg-gray-400 rounded-tl-lg rounded-tr-lg lora">{title}</div>
+	return <div className="py-3 mb-4 text-3xl bg-gray-400 rounded-tl-lg rounded-tr-lg lora">{title}</div>
 }
 
 export default function Home() {
@@ -49,7 +49,7 @@ export default function Home() {
 				<script data-goatcounter="https://masterclass.goatcounter.com/count" async src="//gc.zgo.at/count.js" />
 			</Head>
 			<div className="w-full h-auto bg-gray-800">
-				<div className="w-full text-xl font-light text-center text-gray-100 underline serif">
+				<div className="w-full pt-4 text-xl font-light text-center text-gray-100 underline serif">
 					<a href="http://chng.it/xLSSp4DbJS" target="_blank" rel="noopener noreferrer">
 						Sign the petition to bring back Hollywood Masterclass
 					</a>
@@ -121,7 +121,7 @@ export default function Home() {
 				</div>
 
 				<div className="flex flex-col items-center justify-center w-full mx-auto my-20 text-gray-800 md:flex-row md:w-5/6">
-					<div className="w-2/3 text-center bg-gray-300 rounded-lg shadow-lg h-76 md:w-1/4">
+					<div className="w-2/3 text-center bg-gray-300 rounded-lg shadow-lg h-76 md:w-1/3">
 						{sidePricing('Trial')}
 						<div className="flex flex-wrap items-start justify-center w-full h-56 px-3 text-left">
 							<div className="flex w-full">
@@ -148,31 +148,31 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="w-3/4 h-auto mx-2 my-6 text-center bg-gray-300 rounded-lg shadow-lg md:my-0 md:w-1/3">
-						{sidePricing('Personal Masterclass')}
-						<div className="flex flex-wrap items-start justify-center w-full h-auto pl-4 pr-8 text-left">
+					<div className="w-3/4 h-auto mx-6 my-6 text-center bg-gray-300 rounded-lg shadow-lg md:my-0 md:w-2/5">
+					<div className="py-3 mb-4 text-3xl bg-gray-400 rounded-tl-lg rounded-tr-lg lora">Personal<br />Masterclass</div>
+						<div className="flex flex-wrap items-start justify-center w-full h-auto pl-4 pr-8 text-left md:py-6">
 							<div className="w-1/6 text-center">
 								<div className="font-sans text-lg font-extrabold text-green-400">&#x2713;</div>
 							</div>
-							<p className="w-5/6 mb-2">
+							<p className="w-5/6 mb-6">
 								Shonk sends the elevator back down to teach you everything you need to succeed in
 								Hollywood.
 							</p>
 							<div className="w-1/6 text-center">
 								<div className="font-sans text-lg font-extrabold text-green-400">&#x2713;</div>
 							</div>
-							<p className="w-5/6 mb-2">Learn what is art, what is a artist.</p>
+							<p className="w-5/6 mb-6">Learn what is art, what is a artist.</p>
 							<div className="w-1/6 text-center">
 								<div className="font-sans text-lg font-extrabold text-green-400">&#x2713;</div>
 							</div>
-							<div className="w-5/6 mb-2">
+							<div className="w-5/6 mb-6">
 								First one is free, but if you want to take another it will cost double.
 							</div>
-							<div className="self-end py-2 pl-4 pr-2 mb-4 italic">Contact Shonk's agent for info.</div>
 						</div>
+							<div className="self-end w-full px-6 mb-6 italic text-center">Contact Shonk's agent for info.</div>
 					</div>
 
-					<div className="w-2/3 text-center bg-gray-300 rounded-lg shadow-lg h-76 md:w-1/4">
+					<div className="w-2/3 text-center bg-gray-300 rounded-lg shadow-lg h-76 md:w-1/3">
 						{sidePricing('Premium')}
 						<div className="flex flex-wrap items-start justify-center w-full h-56 px-3 text-left">
 							<div className="w-1/6 text-center">
