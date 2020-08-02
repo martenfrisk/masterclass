@@ -30,6 +30,13 @@ const sidePricing = (title) => {
 export default function Home() {
 	const [ vis, setVis ] = React.useState(false)
 	const [ visTwo, setVisTwo ] = React.useState(false)
+	const [ info, setInfo ] = React.useState(false)
+	React.useEffect(() => {
+		setInfo(true)
+		setTimeout(() => {
+			setInfo(false)
+		}, 4000)
+	}, [])
 	React.useEffect(() => {
 		setTimeout(() => {
 			setVis(true)
@@ -48,6 +55,13 @@ export default function Home() {
 				<title>Hollywood Masterclass with Shonk Lemons</title>
 				<script data-goatcounter="https://masterclass.goatcounter.com/count" async src="//gc.zgo.at/count.js" />
 			</Head>
+			{info && (
+				<div className="absolute top-0 left-auto flex justify-center w-full">
+					<div className="w-auto p-4 mt-2 text-lg text-center text-white bg-blue-800 rounded-md">
+						This is a fan website. It is not affiliated with the creators of Hollywood Masterclass.
+					</div>
+				</div>
+			)}
 			<div className="w-full h-auto bg-gray-800">
 				<div className="w-full pt-4 text-xl font-light text-center text-gray-100 underline serif">
 					<a href="http://chng.it/xLSSp4DbJS" target="_blank" rel="noopener noreferrer">
@@ -60,13 +74,13 @@ export default function Home() {
 						<p className="w-full tracking-widest mc">Hollywood</p>
 						<p className="w-full tracking-wider mc">Masterclass</p>
 
-						<p className="flex items-start w-64 mx-auto mt-4 text-2xl md:text-4xl md:mt-10">
+						<div className="flex items-start w-64 mx-auto mt-4 text-2xl md:text-4xl md:mt-10">
 							<span>By</span>
 							<div className="inline-block w-48 h-32 ml-4">
 								{visTwo && <Shonk />}
 								{vis && <Lemons />}
 							</div>
-						</p>
+						</div>
 					</div>
 					<img
 						src="/shonk.png"
@@ -79,7 +93,7 @@ export default function Home() {
 			<div className="container flex flex-col items-center max-w-6xl mx-auto">
 				{infobox(
 					'About Shonk Lemons',
-					'A renaissance man in the truest sense of the term -- comedian, producer, actor, executive, humanitarian, and, most recently, father -- there is nothing, it seems, that Lemons cannot do.',
+					'A renaissance man in the truest sense of the term -- comedian, producer, actor, executive, humanitarian -- there is nothing, it seems, that Lemons cannot do.',
 					'Off-screen, Lemons has become prominently involved in international charity projects.'
 				)}
 
@@ -149,7 +163,9 @@ export default function Home() {
 					</div>
 
 					<div className="w-3/4 h-auto mx-6 my-6 text-center bg-gray-300 rounded-lg shadow-lg md:my-0 md:w-2/5">
-					<div className="py-3 mb-4 text-3xl bg-gray-400 rounded-tl-lg rounded-tr-lg lora">Personal<br />Masterclass</div>
+						<div className="py-3 mb-4 text-3xl bg-gray-400 rounded-tl-lg rounded-tr-lg lora">
+							Personal<br />Masterclass
+						</div>
 						<div className="flex flex-wrap items-start justify-center w-full h-auto pl-4 pr-8 text-left md:py-6">
 							<div className="w-1/6 text-center">
 								<div className="font-sans text-lg font-extrabold text-green-400">&#x2713;</div>
@@ -169,7 +185,9 @@ export default function Home() {
 								First one is free, but if you want to take another it will cost double.
 							</div>
 						</div>
-							<div className="self-end w-full px-6 mb-6 italic text-center">Contact Shonk's agent for info.</div>
+						<div className="self-end w-full px-6 mb-6 italic text-center">
+							Contact Shonk's agent for info.
+						</div>
 					</div>
 
 					<div className="w-2/3 text-center bg-gray-300 rounded-lg shadow-lg h-76 md:w-1/3">
